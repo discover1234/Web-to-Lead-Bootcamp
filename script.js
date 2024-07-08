@@ -12,7 +12,7 @@ function beforeSubmit(event)
     else
     {
         alert("PLease check the recaptcha box to submit the lead");
-        event.preventdefault();
+        event.preventDefault();
     }
 
 }   
