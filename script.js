@@ -13,6 +13,8 @@ function beforeSubmit(event)
     {
         alert("PLease check the recaptcha box to submit the lead");
         event.preventDefault();
+        return false;
+        console.log('Form submission prevented.');
     }
 
 }   
