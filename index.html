@@ -29,12 +29,15 @@
     
     <label for="Lead Date">Lead Date</label><input type="date" required ="true" class = "inputDate"/><br/>
     <!-- Lead Date:<span class="dateInput dateOnlyInput"><input  id="00NJ1000000yuFF" name="00NJ1000000yuFF" size="12" type="text" /></span><br> -->
-    <div class="g-recaptcha" data-sitekey="6LfPIAkqAAAAABnocapELSMK1ylpJPdmxOT66CAG"></div><br>
+    <div class="g-recaptcha" data-sitekey="6LfPIAkqAAAAABnocapELSMK1ylpJPdmxOT66CAG" data-callback="captchasuccess"></div><br>
 
     <input type="submit" name="submit" class="submit">
     
     <!--whenever you want to convert the date and store into salesforce org then first convert the value as per your locale. System.debug(UserInfo.getLocale());
     we have to put this form over the internet as this is in local server to do that git pages to be used.
+
+    validations on captcha done using a special property known as data callback specially
+    used for calling this type of callback function. As soon as the user check the checkbox the flag value is updated.
     -->
     
     </form>
